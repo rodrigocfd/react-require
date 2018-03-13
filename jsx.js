@@ -35,19 +35,6 @@
 	define(['babel'], function(Babel) {
 		return {
 			load: function(name, req, onload, config) {
-				function applyOptions(options) {
-					var defaults = {
-						modules: 'amd',
-						sourceMap: config.isBuild ? false : 'inline',
-						sourceFileName: name + '.js'
-					};
-					for (var key in options) {
-						if (options.hasOwnProperty(key)) {
-							defaults[key] = options[key];
-						}
-					}
-					return defaults;
-				}
 				var url = req.toUrl(name + '.js');
 
 				fetchText(url, function(text) {
