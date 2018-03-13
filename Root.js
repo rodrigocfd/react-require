@@ -1,10 +1,15 @@
 'use strict';
 
-define(['react', 'react-dom'], function(React, ReactDOM) {
+define(['react', 'react-dom', 'jsx!CustomInput'],
+	function(React, ReactDOM, CustomInput) {
+
 	class Root extends React.Component {
 		render() {
 			return (
-				<h1>Root component</h1>
+				<div>
+					<h1>Root component</h1>
+					<CustomInput label="Name"/>
+				</div>
 			);
 		}
 	}
