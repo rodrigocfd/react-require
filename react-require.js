@@ -2,7 +2,7 @@
  * React with RequireJS
  * @author Rodrigo Cesar de Freitas Dias
  * @license MIT
- * @see https://github.com/rodrigocfd/react-requirejs
+ * @see https://github.com/rodrigocfd/react-require
  */
 
 'use strict';
