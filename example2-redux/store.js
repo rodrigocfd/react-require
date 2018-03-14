@@ -1,3 +1,10 @@
+/**
+ * React with RequireJS
+ * @author Rodrigo Cesar de Freitas Dias
+ * @license MIT
+ * @see https://github.com/rodrigocfd/react-requirejs
+ */
+
 'use strict';
 
 define(['redux'],
