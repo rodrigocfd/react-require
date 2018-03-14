@@ -4,6 +4,8 @@
 	<meta name="author" content="Rodrigo Cesar de Freitas Dias"/>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
 	<script>
+		window.babelConfig = {
+		};
 		requirejs.config({
 			paths: {
 				'react': 'https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.production.min',
@@ -18,11 +20,6 @@
 	</script>
 </head>
 <body>
-	<!--
-		For development in Google Chrome, to avoid cross-origin
-		script blocking, run it with the following flags:
-		--disable-web-security --user-data-dir
-	-->
 	<div id="root"></div>
 </body>
 </html>

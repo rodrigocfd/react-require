@@ -1,8 +1,11 @@
 'use strict';
 
-// Based on:
-// https://github.com/mikach/requirejs-babel
-// https://gist.github.com/kenichi-odo/9fd4c1ee114082302df3f502c3b4bac1
+/**
+ * React with RequireJS
+ * @author Rodrigo Cesar de Freitas Dias
+ * @license MIT
+ * @see https://github.com/rodrigocfd/react-requirejs
+ */
 
 (function() {
 	var fetchText, _buildMap = {};
@@ -37,10 +40,16 @@
 			load: function(name, req, onload, config) {
 				var url = req.toUrl(name + '.js');
 
+				// Default values for Babel presets and plugins.
+				var babelPresets = (window.babelConfig && window.babelConfig.presets) ||
+					['es2015', 'react'];
+				var babelPlugins = (window.babelConfig && window.babelConfig.plugins) ||
+					['transform-class-properties', 'transform-decorators-legacy'];
+
 				fetchText(url, function(text) {
 					var code = Babel.transform(text, {
-						presets: ['es2015', 'react'],
-						plugins: ['transform-class-properties','transform-decorators-legacy'],
+						presets: babelPresets,
+						plugins: babelPlugins,
 						filename: 'embedded',
 						sourceMaps: 'inline'
 					}).code;
