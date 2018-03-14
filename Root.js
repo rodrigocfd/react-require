@@ -1,7 +1,7 @@
 'use strict';
 
-define(['react', 'react-dom', 'jsx!CustomInput'],
-	function(React, ReactDOM, CustomInput) {
+define(['react', 'react-redux', 'store', 'jsx!CustomInput'],
+	function(React, ReactRedux, store, CustomInput) {
 
 	class Root extends React.Component {
 		render() {
@@ -9,10 +9,12 @@ define(['react', 'react-dom', 'jsx!CustomInput'],
 				<div>
 					<h1>Root component</h1>
 					<CustomInput label="Name"/>
+					<p>Typed: {this.props.name}</p>
 				</div>
 			);
 		}
 	}
 
-	ReactDOM.render(<Root/>, document.getElementById('root'));
+	const mapStateToProps = (state) => state;
+	return ReactRedux.connect(mapStateToProps)(Root);
 });
