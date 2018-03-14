@@ -3,14 +3,21 @@
 define(['redux'],
 	function(Redux) {
 
-	function reducer(state = {}, {type, payload}) {
+	const initialState = {
+		name: ''
+	};
+
+	function reducer(state, {type, payload}) {
 		switch (type) {
 		case 'setName':
-			return payload;
+			return {
+				...state,
+				name: payload.name
+			};
 		default:
 			return state;
 		}
 	}
 
-	return Redux.createStore(reducer);
+	return Redux.createStore(reducer, initialState);
 });

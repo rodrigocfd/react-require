@@ -1,22 +1,13 @@
 'use strict';
 
-define(['react', 'react-redux', 'jsx!CustomInput'],
-	function(React, Redux, CustomInput) {
+define(['react', 'jsx!CustomInput', 'jsx!Displayer'],
+	function(React, CustomInput, Displayer) {
 
-	@Redux.connect(state => ({
-		name: state.name
-	}))
-	class Root extends React.Component {
-		render() {
-			return (
-				<div>
-					<h1>Root component</h1>
-					<CustomInput label="Name"/>
-					<p>Typed: {this.props.name}</p>
-				</div>
-			);
-		}
-	}
-
-	return Root;
+	return () => (
+		<div>
+			<h1>Root component</h1>
+			<CustomInput label="Name"/>
+			<Displayer title="Typed"/>
+		</div>
+	);
 });
