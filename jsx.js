@@ -40,7 +40,7 @@
 				fetchText(url, function(text) {
 					var code = Babel.transform(text, {
 						presets: ['es2015', 'react'],
-						plugins: ['transform-class-properties'],
+						plugins: ['transform-class-properties','transform-decorators-legacy'],
 						filename: 'embedded',
 						sourceMaps: 'inline'
 					}).code;

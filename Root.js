@@ -1,8 +1,11 @@
 'use strict';
 
-define(['react', 'react-redux', 'store', 'jsx!CustomInput'],
-	function(React, ReactRedux, store, CustomInput) {
+define(['react', 'react-redux', 'jsx!CustomInput'],
+	function(React, Redux, CustomInput) {
 
+	@Redux.connect(state => ({
+		name: state.name
+	}))
 	class Root extends React.Component {
 		render() {
 			return (
@@ -15,6 +18,5 @@ define(['react', 'react-redux', 'store', 'jsx!CustomInput'],
 		}
 	}
 
-	const mapStateToProps = (state) => state;
-	return ReactRedux.connect(mapStateToProps)(Root);
+	return Root;
 });

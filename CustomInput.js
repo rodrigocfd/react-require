@@ -1,13 +1,14 @@
 'use strict';
 
-define(['react', 'store'],
-	function(React, store) {
+define(['react', 'react-redux'],
+	function(React, Redux) {
 
-	return class extends React.Component {
+	@Redux.connect()
+	class CustomInput extends React.Component {
 		txt = null;
 
 		onChange = () => {
-			store.dispatch({
+			this.props.dispatch({
 				type: 'setName',
 				payload: { name: this.txt.value }
 			});
@@ -27,5 +28,7 @@ define(['react', 'store'],
 				</div>
 			);
 		}
-	};
+	}
+
+	return CustomInput;
 });
