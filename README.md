@@ -16,7 +16,7 @@ However, it has been useful to me in situations where I wanted to write a small 
 
 See the examples.
 
-### Configuration options
+## Configuration options
 
 You can host `react-require.min.js` locally or use [RawGit CDN](https://rawgit.com/):
 
