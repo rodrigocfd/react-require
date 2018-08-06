@@ -4,7 +4,7 @@
 
 A [RequireJS](http://requirejs.org/docs/plugins.html) plugin which uses [Babel](https://babeljs.io) to allow you to write [React](https://reactjs.org/) apps with **no** build step, **no** Webpack, **not even** Node.js installed. Just you and a text editor, like in the old [jQuery](http://jquery.com/) days: write and run in the browser right away.
 
-It has support to JS classes, decorators, and even [Redux](https://github.com/reactjs/react-redux). It's based on [this](https://github.com/mikach/requirejs-babel) and [this](https://gist.github.com/kenichi-odo/9fd4c1ee114082302df3f502c3b4bac1). Babel [presets and plugins](https://babeljs.io/docs/plugins/) are configurable.
+It has support to JS classes, decorators, and even [Redux](https://github.com/reactjs/react-redux) and [MobX](https://github.com/mobxjs/mobx). It's based on [this](https://github.com/mikach/requirejs-babel) and [this](https://gist.github.com/kenichi-odo/9fd4c1ee114082302df3f502c3b4bac1). Babel [presets and plugins](https://babeljs.io/docs/plugins/) are configurable.
 
 ## Why should I use it?
 

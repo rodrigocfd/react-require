@@ -1,0 +1,31 @@
+<!--
+ * React with RequireJS
+ * @author Rodrigo Cesar de Freitas Dias
+ * @license MIT
+ * @see https://github.com/rodrigocfd/react-require
+-->
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Rodrigo Cesar de Freitas Dias"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+	<script>
+		window.babelConfig = {
+		};
+		requirejs.config({
+			paths: {
+				'jsx': '../react-require.min',
+				'babel': 'https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min',
+				'mobx': 'https://cdnjs.cloudflare.com/ajax/libs/mobx/5.0.3/mobx.umd.min',
+				'mobx-react': 'https://cdnjs.cloudflare.com/ajax/libs/mobx-react/5.2.3/index.min',
+				'react': 'https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min',
+				'react-dom': 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min'
+			}
+		});
+		require(['jsx!index']);
+	</script>
+</head>
+<body>
+	<div id="root"></div>
+</body>
+</html>
