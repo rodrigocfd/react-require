@@ -8,11 +8,11 @@
 'use strict';
 
 define(['react', 'react-dom', 'mobx-react', 'jsx!Root', 'jsx!store'],
-	function(React, ReactDOM, MobXReact, Root, store) {
+function(React, ReactDOM, MobXReact, Root, store) {
 
 	ReactDOM.render(
 		<MobXReact.Provider store={store}>
-			<Root/>
+			<Root />
 		</MobXReact.Provider>,
 		document.getElementById('root')
 	);

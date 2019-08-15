@@ -8,7 +8,7 @@
 'use strict';
 
 define(['react'],
-	function(React) {
+function(React) {
 
 	class Another extends React.Component {
 		render() {

@@ -8,10 +8,10 @@
 'use strict';
 
 define(['react', 'react-dom', 'jsx!App'],
-	function(React, ReactDOM, App) {
+function(React, ReactDOM, App) {
 
 	ReactDOM.render(
-		<App/>,
+		<App />,
 		document.getElementById('app')
 	);
 });

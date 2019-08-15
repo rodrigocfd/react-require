@@ -8,7 +8,7 @@
 'use strict';
 
 define(['redux'],
-	function(Redux) {
+function(Redux) {
 
 	const initialState = {
 		name: ''

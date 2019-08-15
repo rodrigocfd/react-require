@@ -8,7 +8,7 @@
 'use strict';
 
 define(['react', 'mobx-react'],
-	function(React, MobXReact) {
+function(React, MobXReact) {
 
 	const Displayer = ({title, store}) => (
 		<div><b>{title}:</b> {store.name}</div>

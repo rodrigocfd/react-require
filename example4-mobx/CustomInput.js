@@ -8,7 +8,7 @@
 'use strict';
 
 define(['react', 'mobx-react'],
-	function(React, MobXReact) {
+function(React, MobXReact) {
 
 	@MobXReact.inject('store')
 	class CustomInput extends React.Component {
@@ -28,7 +28,7 @@ define(['react', 'mobx-react'],
 					<span>{this.props.label}</span>
 					<input type="text"
 						ref={e => this.txt = e}
-						onChange={this.onChange}/>
+						onChange={this.onChange} />
 				</div>
 			);
 		}

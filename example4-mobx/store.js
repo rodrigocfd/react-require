@@ -8,7 +8,7 @@
 'use strict';
 
 define(['mobx'],
-	function(MobX) {
+function(MobX) {
 
 	class Store {
 		name = '';

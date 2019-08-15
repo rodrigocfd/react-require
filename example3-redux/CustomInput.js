@@ -8,7 +8,7 @@
 'use strict';
 
 define(['react', 'react-redux'],
-	function(React, Redux) {
+function(React, Redux) {
 
 	@Redux.connect()
 	class CustomInput extends React.Component {
@@ -31,7 +31,7 @@ define(['react', 'react-redux'],
 					<span>{this.props.label}</span>
 					<input type="text"
 						ref={e => this.txt = e}
-						onChange={this.onChange}/>
+						onChange={this.onChange} />
 				</div>
 			);
 		}
