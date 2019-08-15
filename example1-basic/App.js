@@ -10,13 +10,9 @@
 define(['react'],
 function(React) {
 
-	class App extends React.Component {
-		render() {
-			return (
-				<h1>App component</h1>
-			);
-		}
-	}
+	const App = () => (
+		<h1>App component</h1>
+	);
 
 	return App;
 });

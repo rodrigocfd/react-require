@@ -10,13 +10,11 @@
 define(['react'],
 function(React) {
 
-	class Another extends React.Component {
-		render() {
-			return (
-				<div><b>The text is:</b> {this.props.text}</div>
-			);
-		}
-	}
+	const Another = ({text}) => (
+		<div>
+			<b>The text is:</b> {text}
+		</div>
+	);
 
 	return Another;
 });

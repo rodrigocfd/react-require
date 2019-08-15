@@ -10,16 +10,12 @@
 define(['react', 'jsx!Another'],
 function(React, Another) {
 
-	class App extends React.Component {
-		render() {
-			return (
-				<div>
-					<h1>App component</h1>
-					<Another text="A child component" />
-				</div>
-			);
-		}
-	}
+	const App = () => (
+		<div>
+			<h1>App component</h1>
+			<Another text="A child component" />
+		</div>
+	);
 
 	return App;
 });
