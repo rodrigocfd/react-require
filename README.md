@@ -16,6 +16,10 @@ However, it has been useful to me in situations where I wanted to write a small 
 
 See the examples.
 
+You can run the examples by [installing http-server](https://stackoverflow.com/a/23122981/6923555), then running it from the root directory. Using the default 8080 port, the first example will be available at:
+
+* http://localhost:8080/example1-basic/
+
 ## Configuration options
 
 You can host `react-require.min.js` locally or use [RawGit CDN](https://rawgit.com/):
@@ -48,8 +52,6 @@ All the configurations described above can be seen in an embedded `<script>` in 
 2. The amount of bytes to be downloaded by the browser is much bigger than a properly compiled, minified, packaged app.
 
 3. Since we're using production versions of React libraries, some validations, like `propTypes`, won't show up in the console. You can change these libraries to development versions though, at the cost of making the app even slower.
-
-4. For local development in Google Chrome, to avoid cross-origin script blocking, run it [with the flags](https://stackoverflow.com/a/3177718/6923555) `--disable-web-security` and `--user-data-dir`.
 
 ## Why this monstrosity?
 
